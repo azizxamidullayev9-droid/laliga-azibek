@@ -10,7 +10,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-TOKEN = os.environ.get("0182d023fa5f4f988eb943c2f3ae5c7d", "")
+TOKEN = os.environ.get("FOOTBALL_TOKEN", "")
 BASE = "https://api.football-data.org/v4/competitions/PD"   # PD = La Liga
 
 
