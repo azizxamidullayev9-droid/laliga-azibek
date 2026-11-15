@@ -78,8 +78,8 @@ def main():
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }
 
-    os.makedirs("site", exist_ok=True)
-    with open("site/data.json", "w", encoding="utf-8") as f:
+    
+    with open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False)
     print(f"OK: {len(table)} jamoa, {len(top)} to'purar yozildi.")
 
